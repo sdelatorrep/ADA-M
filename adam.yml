@@ -25,7 +25,7 @@ AdamHeader:
       type: string
       example: 2012-07-19 or 2017-01-17T20:33:40Z
     matrixProfileUpdates:
-      $ref: "#/definitions/ProfileUpdates"
+      $ref: "#/ProfileUpdates"
     resourceName:
       type: string
     resourceReferences:
@@ -35,11 +35,11 @@ AdamHeader:
     resourceDescription:
       type: string
     resourceDataLevel:
-      $ref: "#/definitions/DataLevel"
+      $ref: "#/DataLevel"
     resourceContactNames:
       type: array
       items:
-        $ref: "#/definitions/Contact"
+        $ref: "#/Contact"
     resourceContactOrganisations:
       type: array
       items:
@@ -88,91 +88,91 @@ AdamProfile:
   #required:
   properties:
     country:
-      $ref: "#/definitions/RestrictionsUL"        
+      $ref: "#/RestrictionsUL"        
     allowedCountries:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     organisation:
-      $ref: "#/definitions/RestrictionsUL"
+      $ref: "#/RestrictionsUL"
     allowedOrganisations:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     nonProfitOrganisation:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedNonProfitOrganisations:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     profitOrganisation:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedProfitOrganisations:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     person:
-      $ref: "#/definitions/RestrictionsUL"
+      $ref: "#/RestrictionsUL"
     allowedPersons:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     academicProfessional:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedAcademicProfessionals:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     clinicalProfessional:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedClinicalProfessionals:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     profitProfessional:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedProfitProfessionals:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     nonProfessional:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedNonProfessionals:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     nonProfitPurpose:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedNonProfitPurposes:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     profitPurpose:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedProfitPurposes:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     researchPurpose:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedResearchPurposes:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     allowedResearchProfiles:
       type: array
       items:
-        $ref: "#/definitions/ResearchDescription"
+        $ref: "#/ResearchDescription"
     clinicalPurpose:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
     allowedClinicalPurpose:
       type: array
       items:
-        $ref: "#/definitions/ProfileDescription"
+        $ref: "#/ProfileDescription"
     allowedClinicalProfiles:
       type: array
       items:
-        $ref: "#/definitions/ClinicalDescription"
+        $ref: "#/ClinicalDescription"
 RestrictionsUL:
   type: string
   enum:
@@ -215,11 +215,11 @@ ResearchDescription:
   type: object
   properties:
     type:
-      $ref: "#/definitions/ResearchProfile"
+      $ref: "#/ResearchProfile"
     description:
       type: string
     restriction:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
 ClinicalProfile:
   type: string
   enum:
@@ -230,11 +230,11 @@ ClinicalDescription:
   type: object
   properties:
     type:
-      $ref: "#/definitions/ClinicalProfile"
+      $ref: "#/ClinicalProfile"
     description:
       type: string
     restriction:
-      $ref: "#/definitions/RestrictionsULF"
+      $ref: "#/RestrictionsULF"
 AdamTerms:
   type: object
   #required:
@@ -325,9 +325,9 @@ AdamMetaConditions:
     - multipleObligationsRule
   properties:
     sharingMode:
-      $ref: "#/definitions/SharingMode"
+      $ref: "#/SharingMode"
     multipleObligationsRule:
-      $ref: "#/definitions/MultipleObligationsRule"
+      $ref: "#/MultipleObligationsRule"
     noOtherConditions:
       type: boolean
       default: false
